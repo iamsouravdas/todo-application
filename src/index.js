@@ -9,6 +9,12 @@ app.get('/', (request, response) => {
     });
 });
 
+app.get("/home", (request, response)=>{
+    return response.json({
+        message: "You hve entered the home page now"
+    })
+});
+
 app.listen(PORT, () => {
     console.log('App is listening at PORT: ', PORT);
 });
